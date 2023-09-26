@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="ganhou"></div>
+
+    <script>
+        let venda_func = Number(prompt("Digite o valor de vendas do funcionario"));
+        let meta_fixa = 500;
+
+        if (venda_func > meta_fixa){
+            meta_fixa = "Ganhou!"
+        }        
+        if (meta_fixa > venda_func) {
+            meta_fixa = "Não ganhou!"
+        }
+        document.getElementById("ganhou").innerHTML = meta_fixa
+    </script>
+</body>
+</html>

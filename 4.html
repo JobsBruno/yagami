@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>divisao</title>
+</head>
+<body>
+    <div id="divisao"> </div>
+    <script>
+        let numero1 =  Number(prompt("digite o numero que deseja saber se é impar ou par"));
+        let divisao = 0;
+        
+        divisao = numero1 % 2;
+        if (divisao == 0) 
+            document.getElementById("divisao").innerHTML = "O numero " + numero1 + " é par"
+        else {
+            document.getElementById("divisao").innerHTML = "O numero " + numero1 + " é impar"
+        }
+    
+    </script>
+</body>
+</html>

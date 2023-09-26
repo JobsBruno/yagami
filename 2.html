@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3> a pessoa com maior peso é:</h3>
+    <div id="pessoa"></div>
+
+    <script>
+        let nome1 = prompt("Qual o nome da primeira pessoa?")
+        let peso1 = prompt("Quanto a primeira pessoa pesa em KG?")
+        let nome2 = prompt("QUal o nome da segunda pessoa?")
+        let peso2 = prompt("Quanto a segunda pessoa pesa em KG?")
+        let retorno
+
+        if (peso1 > peso2) {
+            retorno = "Nome: " + nome1 + " Peso em KG: " + peso1
+        }
+        if (peso2 > peso1) {
+            retorno = "Nome: " + nome2 + " Peso em KG: " + peso2 
+        }
+        document.getElementById("pessoa").innerHTML = retorno
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3> primeira pessoa:</h3>
+    <div id="pessoa1"></div><br>
+    <h3> segunda pessoa:</h3>
+    <div id="pessoa2"></div><br>
+    <div id="velha"></div>
+
+    <script>
+        let nome1 = prompt("digite o nome da primeira pessoa")
+        let nasc1 = prompt("digite o ano de nascimento da primeira pessoa")
+        let nome2 = prompt("digite o nome da segunda pessoa")
+        let nasc2 = prompt("digite o ano de nascimento da segunda pessoa")
+        let idade1 = 0;
+        let idade2 = 0;
+        let retorno = "";
+
+        idade1 = 2023 - parseInt(nasc1)
+        idade2 = 2023 - parseInt(nasc2)
+
+        if (idade1 > idade2) {
+            retorno = "A pessoa mais velha é " + nome1 + " com " + idade1 + " anos."
+        }
+        if (idade1 < idade2) {
+            retorno = "A pessoa mais velha é " + nome2 + " com " + idade2 + " anos."
+        }
+
+        document.getElementById("pessoa1").innerHTML = "Nome: " + nome1 + " idade: " + idade1 + "."
+        document.getElementById("pessoa2").innerHTML = "Nome: " + nome2 + " idade: " + idade2 + "."
+        document.getElementById("velha").innerHTML = retorno
+
+    </script>
+    
+</body>
+</html>

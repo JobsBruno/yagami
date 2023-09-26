@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="dif"></div>
+
+    <script>
+        let numero1 = Number(prompt("Digite o primeiro numero"));
+        let numero2 = Number(prompt("Digite o segundo numero"));
+        let diferenca = 0;
+
+        if (numero1 > numero2) {
+            diferenca = numero1 - numero2
+            document.getElementById("dif").innerHTML = "A diferença entre " + numero1 + " e " + numero2 + " é igual a " + diferenca
+        } 
+        if (numero1 < numero2) {
+            diferenca = numero2 - numero1
+            document.getElementById("dif").innerHTML = "A diferença entre " + numero2 + " e " + numero1 + " é igual a " + diferenca
+        }
+    </script>
+
+</body>
+</html>

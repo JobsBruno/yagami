@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Numero maior e menor </title>
+</head>
+<body>
+    <div id="maior"></div>
+
+    <script>
+        let numero1 = Number(prompt("Digite o primeiro numero"));
+        let numero2 = Number(prompt("Digite o segundo numero"));
+        let retorno = "";
+
+        if (numero1 > numero2) {
+            retorno = "Maior: " + numero1 + " Menor: " + numero2
+        } 
+        if (numero2 > numero1) {
+            retorno = "Maior: " + numero2 + " Menor: " + numero1
+        }
+
+            document.getElementById("maior").innerHTML = retorno
+    </script>
+</body>
+</html>
